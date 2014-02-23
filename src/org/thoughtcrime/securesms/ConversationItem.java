@@ -223,7 +223,7 @@ public class ConversationItem extends LinearLayout {
           messageRecord.getDateSent() :
           messageRecord.getDateReceived());
 
-      dateText.setText(DateUtils.getBetterRelativeTimeSpanString(getContext(), timestamp));
+      dateText.setText(DateUtils.getPreferenceBasedTimeDateString(getContext(), timestamp));
     }
   }
 
